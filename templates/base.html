@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>客户关系管理系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="{% static 'admin.css' %}">
+  </head>
+  <frameset rows="98,*,8" border="7" bordercolor="#1873aa" scrolling="No" noresize="noresize" framespacing="0">
+      <frame src="/show/a/" name="topFrame" scrolling="No" noresize="noresize" id="topFrame">
+      <frameset cols="166,*">
+          <frame src="/show/b/" noresize="noresize">
+          <frame src="/show/d/" name="mainFrame">
+      </frameset>
+      <frame src="/show/c/" name="bottomFrame" scrolling="No" noresize="noresize" id="bottomFrame">
+  </frameset>
+</html>
